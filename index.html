@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al Shahoriar | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about" class="nav-link active">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header id="header">
+      <img src="files/alshahriar.jpg" alt="Al Shahoriar" />
+      <h1>Al Shahoriar</h1>
+      <p class="title">Computer Science Graduate | AI & Machine Learning Enthusiast</p>
+      <a href="files/Al_Shahoriar_Resume.pdf" download class="btn-resume">Download Resume</a>
+    </header>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I’m Al Shahoriar, a passionate and self-driven Full-Stack Web Developer with a strong foundation in both frontend and backend technologies. With hands-on experience in React.js, Spring Boot, Node.js, MySQL, and MongoDB, I specialize in building scalable, responsive, and secure web applications.
+        <br><br>
+        Currently, I’m completing as a Backend Software Engineer Intern at CMED Health Ltd, a healthcare technology company focused on innovative medical solutions. My academic background in Computer Science and Engineering from North South University has empowered me with solid knowledge in OOP, SOLID principles, and MVC architecture.
+        <br><br>
+        I enjoy solving real-world problems with clean code and thoughtful design. Whether it's building REST APIs, implementing JWT authentication, or crafting modern UIs, I always strive for code quality and performance. I'm eager to collaborate in agile environments that encourage innovation, growth, and impactful engineering practices.
+        <br><br>
+
+        My goal is to grow as a developer by building clean, scalable applications and collaborating on impactful tech solutions.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java & Spring Boot</li>
+        <li>JavaScript</li>
+        <li>Node.js, Express.js</li>
+        <li>MongoDB & MYSQL</li>
+        <li>Git, GitHub</li>
+        <li>React.js & Bootstrap</li>
+        <li>Data Stuctur & Algorithm</li>
+        <li>Problem Solving</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Task Manager App (REST API)</h3>
+    <p>A backend project focused on creating an efficient task management system using Node.js and Express with middleware authentication.</p>
+    <a href="https://github.com/Alshahriar78/TaskMangeerAPP_With_Middleware_authentication-RESTAPI-" target="_blank">GitHub Repository</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Appointment Booking System</h3>
+    <p>A full-stack web application for managing doctor and lab test appointments, using React.js and a secure backend.</p>
+    <a href="https://github.com/Alshahriar78/InternProject/tree/main/Appointment-Booking" target="_blank">GitHub Repository</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Prescription Generation Web App</h3>
+    <p>An application designed for doctors to generate and manage prescriptions electronically, built with Spring Boot and MySQL.</p>
+    <a href="https://github.com/Alshahriar78/InternProject/tree/main/prescription_generation" target="_blank">GitHub Repository</a>
+  </div>
+
+  <div class="project-card">
+    <h3>My Photo Gallery (React.js)</h3>
+    <p>A dynamic and responsive photo gallery built with React.js, showcasing modern UI principles and state management.</p>
+    <a href="https://github.com/Alshahriar78/My-Photo-Gallery-With-ReactJs" target="_blank">GitHub Repository</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Food Delivery Landing Page</h3>
+    <p>A clean and responsive landing page designed for a food delivery service using HTML5, CSS3, and Bootstrap 5.</p>
+    <a href="https://github.com/Alshahriar78/FoodDelivaryLandingPage" target="_blank">GitHub Repository</a>
+  </div>
+</section>
+
+
+ <section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="experience-row">
+    <div class="experience-date">April 2025 – Present</div>
+    <div class="experience-card">
+      <h5>Backend Software Engineer Intern</h5>
+      <p>CMED Health Limited</p>
+      <ul>
+        <li>➤ Contributing to innovative healthcare solutions as part of the backend engineering team.</li>
+        <li>➤ Working on Java Spring Boot projects with REST API development.</li>
+        <li>➤ Implementing JWT-based authentication and secure data handling.</li>
+        <li>➤ Collaborating in agile teams to enhance software performance and scalability.</li>
+      </ul>
+      <div class="tags">
+        <div class="tag">Spring Boot</div>
+        <div class="tag">Java</div>
+        <div class="tag">REST API</div>
+        <div class="tag">JWT</div>
+        <div class="tag">Agile</div>
+        <div class="tag">SOLID Principle</div>
+        <div class="tag">Healthcare</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:al.shahoriar@example.com">al.shahoriar@example.com</a></p>
+      <div class="social-links">
+        <a href="https://github.com/Alshahriar78" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/al-shahoriar-860314220/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Al Shahoriar | All rights reserved.
+  </footer>
+
+  <button id="backToTop">↑</button>
+
+  <script>
+    const sections = document.querySelectorAll('.section, header');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    });
+    sections.forEach(section => observer.observe(section));
+
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) backToTop.classList.add("show");
+      else backToTop.classList.remove("show");
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
