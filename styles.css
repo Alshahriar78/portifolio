@@ -175,13 +175,13 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   user-select: none;
 }
-#skills li:nth-child(1) { background: #f44336; }
-#skills li:nth-child(2) { background: #2196f3; }
+#skills li:nth-child(1) { background: #F97F76; }
+#skills li:nth-child(2) { background: #4CA9F6; }
 #skills li:nth-child(3) { background: #4caf50; }
 #skills li:nth-child(4) { background: #ff9800; }
 #skills li:nth-child(5) { background: #9c27b0; }
 #skills li:nth-child(6) { background: #3f51b5; }
-#skills li:nth-child(7) { background: #009688; }
+#skills li:nth-child(7) { background: #00B8A5; }
 #skills li:nth-child(8) { background: #e91e63; }
 #skills li:nth-child(9) { background: #795548; }
 #skills li:nth-child(10) { background: #607d8b; }
